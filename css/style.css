@@ -9,6 +9,7 @@
 }
 /*End of CSS for Navbar*/
 
+/*CSS for header image*/
 .header-image{
 	width: 100%;
 	height: auto;
@@ -30,3 +31,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*End of CSS for header image*/
