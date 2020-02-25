@@ -1,34 +1,41 @@
+.body-colour{
+    background-color: #d3d3d3;
+}
 /*CSS for Navbar*/
 .nav-item {
 	padding: 15px 10px 15px 10px;
 	text-transform: uppercase;
+    font-weight: bold;
 }
-
 .nav-item:hover {
 	background-color: #808080;
 }
 /*End of CSS for Navbar*/
 
-/*CSS for header image*/
-.header-image{
-	width: 100%;
-	height: auto;
-	z-index: 1;
+/*CSS for carousel*/
+.carousel-image{
+    height: 780px;
 }
+@media screen and (max-width: 576px)
+{
+    .carousel-image{
+        height: 380px;
+    }
+}
+/*End of CSS for carousel*/
 
-.image-container {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
+/*CSS for Profile*/
+.profile-title{
+  padding: 15px 0 0 0;
 }
+.profile-image{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+/*End of CSS for profile*/
 
-.centered-text {
-  position: absolute;
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hr-length{
+    width: 100%;
+    border: 1px solid;
 }
-/*End of CSS for header image*/
