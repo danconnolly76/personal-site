@@ -1,5 +1,6 @@
-.body-colour{
-    background-color: #d3d3d3;
+.body-colour {
+    background-color: #F6F3E9;
+    font-family: Calibri;
 }
 /*CSS for Navbar*/
 .nav-item {
@@ -13,22 +14,24 @@
 /*End of CSS for Navbar*/
 
 /*CSS for carousel*/
-.carousel-image{
+.carousel-image {
     height: 780px;
 }
 @media screen and (max-width: 576px)
 {
-    .carousel-image{
+    .carousel-image {
         height: 380px;
     }
 }
 /*End of CSS for carousel*/
 
 /*CSS for Profile*/
-.profile-title{
+.category-title {
   padding: 15px 0 0 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.profile-image{
+.profile-image {
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -39,3 +42,77 @@
     width: 100%;
     border: 1px solid;
 }
+.container-border {
+    background-color: #ffffff;
+}
+.carousel-item {
+    position: relative !important;
+}
+/*CSS for overlay*/
+.black-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.text-overlay h1 {
+    position: absolute;
+    padding: 0 0 25px 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 2;
+}
+.text-overlay h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 2;
+}
+/*End of CSS for overlay*/
+.text-link {
+    color: #000000;
+}
+/*CSS for skills section*/
+.skills-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.float-skills-list{
+    float: right;
+}
+/*End of skills section*/
+
+/*CSS For footer*/
+.footer-title h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0;
+}
+.footer-background{
+    background-color: #000000;
+}
+.footer-text{
+    color: #ffffff;
+}
+.footer-hr{
+    width: 100%;
+    border: 1px solid #939393;
+}
+.email-details{
+    color: #ffffff;
+}
+.email-details a{
+    color: #ffffff;
+}
+.email-details a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*End of CSS*/
