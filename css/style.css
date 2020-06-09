@@ -9,9 +9,15 @@
     font-weight: bold;
 }
 .nav-item:hover {
-	background-color: #808080;
+	background-color: #808080!important;
     color: #ffffff;
 }
+
+.nav-item:visited {
+    background-color: #808080!important;
+    color: #ffffff;
+}
+
 /*End of CSS for Navbar*/
 
 /*CSS for carousel*/
@@ -39,7 +45,7 @@
 }
 /*End of CSS for profile*/
 
-.hr-length{
+.hr-length {
     width: 100%;
     border: 1px solid;
 }
@@ -85,34 +91,34 @@
     margin: 0px;
     padding: 0px;
 }
-.float-skills-list{
+.float-skills-list {
     float: right;
 }
 /*End of skills section*/
 
 /*CSS For footer*/
-.footer-title h2{
+.footer-title h2 {
     color: #ffffff;
     text-transform: uppercase;
     padding: 15px 0 15px 0;
 }
-.footer-background{
+.footer-background {
     background-color: #000000;
 }
-.footer-text{
+.footer-text {
     color: #ffffff;
 }
-.footer-hr{
+.footer-hr {
     width: 100%;
     border: 1px solid #939393;
 }
-.email-details{
+.email-details {
     color: #ffffff;
 }
-.email-details a{
+.email-details a {
     color: #ffffff;
 }
-.email-details a:hover{
+.email-details a:hover {
     color: #ffffff;
     text-decoration: none;
 }
