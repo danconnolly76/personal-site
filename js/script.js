@@ -8,7 +8,7 @@ $('.navbar a').on('click', function (e) {
      const hash = this.hash;
     $('html, body')
       .animate({
-         scrollTop: $(hash).offset().top - 150
+         scrollTop: $(hash).offset().top - 340
        },1200);
    }
  });
@@ -17,7 +17,7 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-$('.navbar-nav .nav-link').click(function(){
-    $('.navbar-nav .nav-link').removeClass('active');
+$('.nav-list').on('click', 'li', function() {
+    $('.nav-list li.active').removeClass('active');
     $(this).addClass('active');
-})
+});
