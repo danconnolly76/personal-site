@@ -106,6 +106,19 @@
 }
 /*End of skills section*/
 
+.button-wrapper{
+    position: fixed;
+	right: 0;
+	top: 250px;
+	z-index: 500;
+}
+.button-colour{
+	background-color: #343a40 !important;
+	border-color: #343a40 !important;
+}
+.button-colour:active{
+	border-color: #ffffff !important;
+}
 /*CSS For footer*/
 .footer-title h2 {
     color: #ffffff;

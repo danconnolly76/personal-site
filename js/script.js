@@ -26,9 +26,14 @@ $(document).ready(function() {
         }
     });
 
-    $('.navbar-nav>li>a').on('click', function () {
+    /* $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
+    }); */
+	
+	$('.collapse').on('click', function () {
+        $('.collapse').collapse('hide');
     });
+
 
     $('.nav-list').on('click', 'li', function () {
         $('.nav-list li.active').removeClass('active');
