@@ -25,10 +25,6 @@ $(document).ready(function() {
             }
         }
     });
-
-    /* $('.navbar-nav>li>a').on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-    }); */
 	
 	$('.collapse').on('click', function () {
         $('.collapse').collapse('hide');
@@ -39,5 +35,35 @@ $(document).ready(function() {
         $('.nav-list li.active').removeClass('active');
         $(this).addClass('active');
     });
-
 });
+
+$(function() {
+
+    $("#newModalForm").validate({
+      // Specify validation rules
+      rules: {
+        firstname: {
+            required: true,
+            minlength: 2,
+            maxlength: 5
+        },
+        lastname: {
+            required: true,
+            minlength: 2,
+            maxlength: 5
+        },
+        email: {
+            required: true,
+            email: true
+          },
+      },
+      // Specify validation error messages
+      messages: {
+        firstname: "Please enter valid name",
+        lastname: "Please enter valid name",
+      },
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });  

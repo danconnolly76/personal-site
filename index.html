@@ -2,23 +2,25 @@
 <html>
 
 <head>
-		<title>Daniel Connolly - Online CV</title>
-		<meta name="author" content="Daniel Connolly">
-		<meta name="description" content="An online CV for a Web Developer that provides information on Daniel Connolly">
-        <!-- Link for custom CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <!-- meta value -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- jQuery library -->
+        <title>Daniel Connolly - Online CV</title>
+        <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <!--Bootstrap Version 4.5-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<!-- Popper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<!-- Latest compiled JavaScript -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!--Custom JavaScript -->
         <script src="js/script.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<meta name="author" content="Daniel Connolly">
+		<meta name="description" content="An online CV for a Web Developer that provides information on Daniel Connolly">
+        <!-- Link for custom CSS -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <!-- meta value -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 
 
     <!--Font-Awesome-->
@@ -504,8 +506,42 @@
     <br>
 </section>
 </div>
-</body>
-		
+<footer>
+      <!-- Modal -->
+<div class="modal fade" id="footerFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="" name="registration" id="newModalForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name"/>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name"/>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+                </div>
+
+                <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>	
 </html>
 
 
