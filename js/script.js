@@ -44,23 +44,32 @@ $(function() {
       rules: {
         firstname: {
             required: true,
-            minlength: 2,
-            maxlength: 5
+            maxlength: 30
         },
         lastname: {
             required: true,
-            minlength: 2,
-            maxlength: 5
+            maxlength: 30
         },
         email: {
             required: true,
             email: true
           },
+        comment: {
+            required: true,
+            maxlength: 50
+        }
       },
       // Specify validation error messages
       messages: {
-        firstname: "Please enter valid name",
-        lastname: "Please enter valid name",
+          firstname: {
+              maxlength: "A maximum of 30 characters"
+          },
+          lastname: {
+              maxlength: "A maximum of 30 characters"
+          },
+         comment: {
+              maxlength: "A maximum of 50 characters"
+         }
       },
       submitHandler: function(form) {
         form.submit();

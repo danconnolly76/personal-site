@@ -20,11 +20,8 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <!-- meta value -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-
-
-    <!--Font-Awesome-->
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--Font-Awesome-->
+        <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
 		
 </head>
 <body>
@@ -512,7 +509,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Enter your contact details</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -520,22 +517,23 @@
             <div class="modal-body">
                 <form action="" name="registration" id="newModalForm">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name"/>
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name" required/>
                 </div>
                 
                 <div class="form-group">
-                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name"/>
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required/>
                 </div>
                 
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required/>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Message..." required></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-secondary">Submit</button>
                 </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
