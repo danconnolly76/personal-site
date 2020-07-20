@@ -54,9 +54,9 @@ $(function() {
             required: true,
             email: true
           },
-        comment: {
+        message: {
             required: true,
-            maxlength: 50
+            maxlength: 500
         }
       },
       // Specify validation error messages
@@ -67,8 +67,8 @@ $(function() {
           lastname: {
               maxlength: "A maximum of 30 characters"
           },
-         comment: {
-              maxlength: "A maximum of 50 characters"
+         message: {
+              maxlength: "A maximum of 500 characters"
          }
       },
       submitHandler: function(form) {
