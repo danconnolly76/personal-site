@@ -6,6 +6,7 @@ function check_data($data) {
     $data = htmlspecialchars($data);
     return $data;
   }
+//require 'php/config.php';
 $status = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   $firstname = check_data($_POST['fname']);
@@ -28,6 +29,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   }
 }
 ?>
+
+
 <!DOCTYPE html>
 <html>
 
