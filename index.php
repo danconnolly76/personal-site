@@ -1,11 +1,11 @@
 <?php
+include 'php/messages.php';
 function check_data($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
   }
-require 'php/config.php';
 $status = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   $firstname = check_data($_POST['fname']);
@@ -23,23 +23,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
     } else if(strlen($message) >= 500) {
         $status = "Maximum characters is 500";
     } else {
-
-      $sql = "INSERT INTO contactinfo (fname, lname, email, message) VALUES (:fname, :lname, :email, :message)";
-
-      $stmt = $pdo->prepare($sql);
-      
-      $stmt->execute(['fname' => $firstname, 'lname' => $lastname, 'email' => $email, 'message' => $message]);
-
-      $status = "Your message was sent";
-      $firstname = "";
-      $email = "";
-      $message = "";
+      Messages::insertMessages($firstname, $lastname, $email, $message);
     }
   }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
