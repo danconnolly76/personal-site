@@ -6,7 +6,6 @@ function check_data($data) {
     $data = htmlspecialchars($data);
     return $data;
   }
-//require 'php/config.php';
 $status = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   $firstname = check_data($_POST['fname']);
@@ -29,11 +28,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
         <title>Daniel Connolly - Online CV</title>
         <!-- jQuery library -->
@@ -59,12 +55,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
 </head>
 <body>
 <div class="container-fluid">
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark nav-background">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-        <ul class="navbar-nav nav-list">
+        <ul class="navbar-nav nav-list ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#home">Home</a>
             </li>
@@ -81,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
     </div>
 </nav>
 <section id="home">
-<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade bg-example" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -124,10 +120,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
 </div>
 </section>
     <section id="profile">
-   <div class="container-border py-3">
+   <div class="container-border py-3 profile_text-colour">
      <div class="container">
          <div class="row justify-content-center education-title">
-             <div class="category-title">
+             <div class="profile__category-title">
              <h2>Profile</h2>
              </div>
          </div>
@@ -138,7 +134,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
              </div>
          </div>
      </div>
-    <div class="container">
+    <div class="container px-sm-2 px-md-0">
          <div class="row">
              <div class="col-md-4">
                 <h3>About me</h3>
@@ -150,7 +146,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
                  </p>
              </div>
              <div class="col-md-4 text-center pt-5">
-                <img class="profile-image" src="images/no-image.jpg">
+                <img class="profile__profile-image" src="images/no-image.jpg">
              </div>
              <div class="col-md-4">
                  <h3>Details</h3>
@@ -165,7 +161,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
    </div><!--End of container-border-->
 </section>
 <section class="body-colour" id="experience">
-  <div class="container">
+  <div class="container px-sm-2 px-sm-0 text-light">
       <div class="row justify-content-center pt-3">
           <div class="category-title">
           <h2>Experience</h2>
@@ -254,8 +250,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   </div>
   </div><!--End of container-->
 </section>
+<section>
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/banner-image.jpg" class="img-fluid" alt="George Yard Barnsley">
+            </div>   
+        </div>    
+    </div>    
+</section>      
 <section id="skills">
-     <div class="container-border">
+     <div class="container-border pt-3">
       <div class="container">
           <div class="row justify-content-center">
               <div class="category-title">

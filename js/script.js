@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
     $('.carousel').carousel({
-        interval: 3000
+        interval: 2500
     });
+    $('.carousel').carousel('cycle');
 
     $('.navbar a').on('click', function (e) {
         if (parseInt($(window).width()) <= 1024) {

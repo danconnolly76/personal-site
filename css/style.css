@@ -1,18 +1,26 @@
 .body-colour {
-    background-color: #F6F3E9;
+    background-color: #000000;
     font-family: Calibri;
 }
 /*CSS for Navbar*/
+.nav-background {
+    background: transparent !important;
+    z-index: 99;
+}
+@media only screen and (max-width: 768px) {
+    .nav-background{
+        background: #000000 !important;
+    }
+}
+.bg-example {
+    margin-top: -90px;
+}
 .nav-item {
-	padding: 15px 10px 15px 10px;
+	padding: 15px 15px 15px 15px;
 	text-transform: uppercase;
     font-weight: bold;
 }
-@media only screen and (min-width: 1200px) {
-   .nav-item{
-       margin-right: 10px;
-   }
-}
+
 @media only screen and (max-width: 768px) {
     .nav-item{
         margin-bottom: 5px;
@@ -40,15 +48,20 @@
         height: 380px;
     }
 }
+
 /*End of CSS for carousel*/
 
 /*CSS for Profile*/
-.category-title {
+.profile_text-colour{
+    background-color: #343a40 !important;
+    color: #ffffff;
+}
+.profile__category-title {
   padding: 15px 0 0 0;
   font-weight: bold;
   text-transform: uppercase;
 }
-.profile-image {
+.profile__profile-image {
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -95,6 +108,7 @@
 .text-link {
     color: #000000;
 }
+/*End of CSS banner image*/
 /*CSS for skills section*/
 .skills-list {
     list-style-type: none;
@@ -114,7 +128,7 @@
 }
 .button-colour{
 	background-color: #343a40 !important;
-	border-color: #343a40 !important;
+    border-color: #343a40 !important;
 }
 .button-colour:active{
 	border-color: #ffffff !important;
