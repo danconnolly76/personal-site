@@ -251,13 +251,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   </div><!--End of container-->
 </section>
 <section>
-    <div class="container-fluid px-0">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="images/banner-image.jpg" class="img-fluid" alt="George Yard Barnsley">
-            </div>   
-        </div>    
-    </div>    
+<section id="banner-image">
+    <div class="container text-center text-light">
+        <h3>Want to now more?</h3>
+    </div>
+</section>        
 </section>      
 <section id="skills">
      <div class="container-border pt-3">

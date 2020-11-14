@@ -85,7 +85,7 @@
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .text-overlay h1 {
     position: absolute;
@@ -158,6 +158,11 @@
 .email-details a:hover {
     color: #ffffff;
     text-decoration: none;
+}
+#banner-image {
+    background-image: linear-gradient(rgba(1, 92, 171, 0.664), rgba(0, 0, 0, 0.5)), url("../images/banner-image.jpg");
+    background-size: cover;
+    padding: 180px 0;
 }
 /*CSS for Modal*/
 .modal-dialog {
