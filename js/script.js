@@ -45,11 +45,11 @@ $(function() {
       rules: {
         firstname: {
             required: true,
-            maxlength: 30
+            maxlength: 40
         },
         lastname: {
             required: true,
-            maxlength: 30
+            maxlength: 50
         },
         email: {
             required: true,

@@ -6,7 +6,6 @@ function check_data($data) {
     $data = htmlspecialchars($data);
     return $data;
   }
-$status = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   $firstname = check_data($_POST['fname']);
   $lastname = check_data($_POST['lname']);
@@ -14,19 +13,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
   $message = check_data($_POST['message']);
 
   if(empty($firstname) || empty($lastname) || empty($email) || empty($message)) {
-    $status = "All fields are compulsory.";
+   
+  } else if (!preg_match("/^[a-zA-Z\s]+$/", $firstname)) {
+    header ('Location: index.php?=invalidFirstName');
+  } else if (strlen($firstname) >= 40) {
+    header ('Location: index.php?=firstNameLength');
+  } else if (!preg_match("/^[a-zA-Z\s]+$/", $lastname)) {
+    header ('Location: index.php?=invalidLastName');
+  } else if(strlen($lastname) >= 50) {
+    header ('Location: index.php?=lastNameLength');
+  } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    header ('Location: index.php?=invalidEmail');
+  } else if(strlen($message) >= 500) {
+        
   } else {
-    if(strlen($firstname) >= 40 || !preg_match("/^[a-zA-Z\s]+$/", $firstname) || strlen($lastname) >= 100 || !preg_match("/^[a-zA-Z\s]+$/", $lastname)) {
-      $status = "Please enter a valid name";
-    } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $status = "Please enter a valid email";
-    } else if(strlen($message) >= 500) {
-        $status = "Maximum characters is 500";
-    } else {
       Messages::insertMessages($firstname, $lastname, $email, $message);
     }
   }
-}
 ?>
 <!DOCTYPE html>
 <html>
