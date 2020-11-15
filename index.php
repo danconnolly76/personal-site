@@ -163,7 +163,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
      </div>
    </div><!--End of container-border-->
 </section>
-<section class="body-colour" id="experience">
+<section class="experience" id="experience">
   <div class="container px-sm-2 px-sm-0 text-light">
       <div class="row justify-content-center pt-3">
           <div class="category-title">
@@ -227,7 +227,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
               <i class="fa fa-map-pin" aria-hidden="true"></i>
                    Pudsey, Leeds, West Yorkshire |
               <i class="fa fa-link" aria-hidden="true"></i>
-                   <a class="text-link" href="https://www.steadygo.digital/" target="_blank">https://www.steadygo.digital</a>
+                   <a class="experience__text-link" href="https://www.steadygo.digital/" target="_blank">https://www.steadygo.digital</a>
               </span>
           </div>
           <div class="col-md-4">
@@ -244,7 +244,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
               <i class="fa fa-map-pin" aria-hidden="true"></i>
                    Florence, Italy |
               <i class="fa fa-link" aria-hidden="true"></i>
-                   <a class="text-link" href="https://www.eui.eu/" target="_blank">https://www.eui.eu/</a>
+                   <a class="experience__text-link" href="https://www.eui.eu/" target="_blank">https://www.eui.eu/</a>
               </span>
           </div>
       </div>
@@ -282,71 +282,71 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
               <li>
                   <span>PHP</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                   </span>
               </li>
               <li>
                   <span>MySQL</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                   </span>
               </li>
              <li>
                  <span>HTML(5)</span>
                  <span class="float-skills-list">
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
                  <span class="fa fa-star-o"></span>
                  <span class="fa fa-star-o"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
                  </span>
              </li>
               <li>
                   <span>MVC</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                   </span>
               </li>
               <li>
                   <span>XML</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                  </span>
               </li>
               <li>
                   <span>OOP</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                  </span>
               </li>
               <li>
                   <span>MySQL</span>
                   <span class="float-skills-list">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
                   <span class="fa fa-star-o"></span>
                   <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
                  </span>
               </li>
           </ul>
@@ -356,71 +356,71 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
             <li>
                  <span>CSS(3)</span>
                  <span class="float-skills-list">
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
                  <span class="fa fa-star-o"></span>
                  <span class="fa fa-star-o"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
                  </span>
             </li>
             <li>
                  <span>Java</span>
                  <span class="float-skills-list">
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
                  <span class="fa fa-star-o"></span>
                  <span class="fa fa-star-o"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
                  </span>
             </li>
             <li>
                  <span>WordPress</span>
                  <span class="float-skills-list">
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
                  <span class="fa fa-star-o"></span>
                  <span class="fa fa-star-o"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
                  </span>
             </li>
             <li>
                  <span>SCSS</span>
                  <span class="float-skills-list">
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
+                 <span class="fa fa-star"></span>
                  <span class="fa fa-star-o"></span>
                  <span class="fa fa-star-o"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
-                 <span class="fa fa-star"></span>
                  </span>
             </li>
             <li>
                 <span>C#</span>
                 <span class="float-skills-list">
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
                 </span>
             </li>
             <li>
                   <span>Android</span>
                   <span class="float-skills-list">
-                  <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star-o"></span>
-                  <span class="fa fa-star-o"></span>
                   <span class="fa fa-star"></span>
                   <span class="fa fa-star"></span>
+                  <span class="fa fa-star-o"></span>
+                  <span class="fa fa-star-o"></span>
+                  <span class="fa fa-star-o"></span>
                   </span>
             </li>
             <li>
                 <span>Javascript</span>
                 <span class="float-skills-list">
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
                 </span>
             </li>
          </ul>
@@ -441,31 +441,31 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
                     <li>
                         <span>PHPStorm</span>
                         <span class="float-skills-list">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                         <span class="fa fa-star-o"></span>
                         <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
                         </span>
                     </li>
                     <li>
                         <span>MS Office</span>
                         <span class="float-skills-list">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                         <span class="fa fa-star-o"></span>
                         <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
                         </span>
                     </li>
                     <li>
                         <span>Visual Studio</span>
                         <span class="float-skills-list">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                         <span class="fa fa-star-o"></span>
                         <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
                         </span>
                     </li>
                 </ul>
@@ -475,31 +475,31 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
                     <li>
                         <span>PHPStorm</span>
                         <span class="float-skills-list">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                         <span class="fa fa-star-o"></span>
                         <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
                         </span>
                     </li>
                     <li>
                         <span>Git / Git Work Flow </span>
                         <span class="float-skills-list">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                         <span class="fa fa-star-o"></span>
                         <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
                         </span>
                     </li>
                     <li>
                         <span>Mac</span>
                         <span class="float-skills-list">
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
                         </span>
                     </li>
                 </ul>

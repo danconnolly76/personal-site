@@ -105,10 +105,20 @@
     z-index: 2;
 }
 /*End of CSS for overlay*/
-.text-link {
-    color: #000000;
+
+/*CSS for experience section*/
+.experience{
+    background-color: #000000;  
 }
-/*End of CSS banner image*/
+.experience__text-link {
+    color: #ffffff;
+}
+.experience__text-link:hover {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+/*End of experience section*/
+
 /*CSS for skills section*/
 .skills-list {
     list-style-type: none;
