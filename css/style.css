@@ -170,7 +170,7 @@
     text-decoration: none;
 }
 #banner-image {
-    background-image: linear-gradient(rgba(1, 92, 171, 0.664), rgba(0, 0, 0, 0.5)), url("../images/banner-image.jpg");
+    background-image: linear-gradient(rgba(8, 8, 8, 0.664), rgba(0, 0, 0, 0.575)), url("../images/banner-image.jpg");
     background-size: cover;
     padding: 180px 0;
 }
