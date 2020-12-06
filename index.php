@@ -1,35 +1,20 @@
 <?php
-include 'php/messages.php';
+include_once 'php/controller.php';
 function check_data($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
   }
-if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
-  $firstname = check_data($_POST['fname']);
-  $lastname = check_data($_POST['lname']);
-  $email = check_data($_POST['email']);
-  $message = check_data($_POST['message']);
 
-  if(empty($firstname) || empty($lastname) || empty($email) || empty($message)) {
-   
-  } else if (!preg_match("/^[a-zA-Z\s]+$/", $firstname)) {
-    header ('Location: index.php?=invalidFirstName');
-  } else if (strlen($firstname) >= 40) {
-    header ('Location: index.php?=firstNameLength');
-  } else if (!preg_match("/^[a-zA-Z\s]+$/", $lastname)) {
-    header ('Location: index.php?=invalidLastName');
-  } else if(strlen($lastname) >= 50) {
-    header ('Location: index.php?=lastNameLength');
-  } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header ('Location: index.php?=invalidEmail');
-  } else if(strlen($message) >= 500) {
-        
-  } else {
-      Messages::insertMessages($firstname, $lastname, $email, $message);
-    }
-  }
+  if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
+    $firstname = check_data($_POST['fname']);
+    $lastname = check_data($_POST['lname']);
+    $email = check_data($_POST['email']);
+    $message = check_data($_POST['message']);
+
+    Controller::checkValidation($firstname, $lastname, $email, $message);
+}
 ?>
 <!DOCTYPE html>
 <html>

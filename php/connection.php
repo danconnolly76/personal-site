@@ -1,7 +1,8 @@
 <?php
 class Connection
 {
-public function getConnection(){
+	
+public static function getConnection(){
 	try{
 	       $conn = new PDO('mysql:host=localhost;dbname=personal-site', 'root', '');
 	    }
@@ -12,7 +13,7 @@ public function getConnection(){
 		return $conn;
 	}
 
-public function closeConnection($conn)
+public static function closeConnection($conn)
 {
 	$conn=null;
 }

@@ -4,7 +4,7 @@ include_once 'connection.php';
 
 class Messages {
     
-    public function insertMessages($firstname, $lastname, $email, $message){
+    public static function insertMessages($firstname, $lastname, $email, $message){
         $conn = Connection::getConnection();
         $query = 'INSERT INTO contactinfo (fname, lname, email, message) VALUES (?, ?, ?, ?)';
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
