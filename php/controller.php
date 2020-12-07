@@ -5,7 +5,7 @@ class Controller {
 
 public static function checkValidation($firstname, $lastname, $email, $message) {
 
-  if(empty($firstname) || empty($lastname) || empty($email) || empty($message)) {
+  if($firstname == "" || $lastname == "" || $email == "" || $message == "") {
     header ('Location: index.php?=emptyFields');
   } else if (!preg_match("/^[a-zA-Z\s]+$/", $firstname)) {
     header ('Location: index.php?=invalidFirstName');
@@ -21,6 +21,7 @@ public static function checkValidation($firstname, $lastname, $email, $message) 
     header ('Location: index.php?=messageLength');  
   } else {
       Messages::insertMessages($firstname, $lastname, $email, $message);
+      header ('Location: index.php?=success');  
      }
    }
  }
