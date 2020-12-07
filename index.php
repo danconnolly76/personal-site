@@ -6,14 +6,14 @@ function check_data($data) {
     $data = htmlspecialchars($data);
     return $data;
   }
-
+    $controller_object = new Controller; 
   if($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['submit'])) {
     $firstname = check_data($_POST['fname']);
     $lastname = check_data($_POST['lname']);
     $email = check_data($_POST['email']);
     $message = check_data($_POST['message']);
 
-    Controller::checkValidation($firstname, $lastname, $email, $message);
+    $controller_object->checkValidation($firstname, $lastname, $email, $message);
 }
 ?>
 <!DOCTYPE html>

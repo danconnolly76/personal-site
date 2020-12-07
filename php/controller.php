@@ -1,9 +1,13 @@
 <?php
 include 'php/messages.php';
 
-class Controller {
+class Controller extends Messages {
 
-public static function checkValidation($firstname, $lastname, $email, $message) {
+public function createMessage($firstname, $lastname, $email, $message) {
+  $this->insertMessages($firstname, $lastname, $email, $message);
+}
+
+public function checkValidation($firstname, $lastname, $email, $message) {
 
   if($firstname == "" || $lastname == "" || $email == "" || $message == "") {
     header ('Location: index.php?=emptyFields');
@@ -20,7 +24,7 @@ public static function checkValidation($firstname, $lastname, $email, $message) 
   } else if(strlen($message) >= 250) {
     header ('Location: index.php?=messageLength');  
   } else {
-      Messages::insertMessages($firstname, $lastname, $email, $message);
+      Controller::createMessage($firstname, $lastname, $email, $message);
       header ('Location: index.php?=success');  
      }
    }

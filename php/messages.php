@@ -2,7 +2,7 @@
 
 include_once 'connection.php';
 
-class Messages {
+class Messages extends Connection {
     
     public static function insertMessages($firstname, $lastname, $email, $message){
         $conn = Connection::getConnection();
